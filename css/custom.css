@@ -1,13 +1,25 @@
 
 #srk-techstack {
-    height:558px;
-    padding-left:10px;
+  height: 100%;
+  margin-bottom: 250px;
+}
+
+#srk-techstack h2{
+  position: relative;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #srk-techstack .gallery{
-    position:relative!important ;
+    
     height:100%!important ;
     width:100%!important ;
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 5%;
   }
   
   #srk-techstack .gallery:after{
@@ -33,15 +45,14 @@
     -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)!important ;
      clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)!important ;
      padding:5px!important ;
-     background:linear-gradient(#ff8c00,yellow)!important ;
+     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
      width:200px!important ;
      height:200px!important ;
-     max-height:250px!important ;
-     max-width:250px!important ;
+     max-height:200px!important ;
+     max-width:200px!important ;
      height: 100%!important ;
      width:100%!important ;
      transition:transform 0.2s!important ;
-     position:absolute!important ;
      cursor:pointer!important ;
   }
   
@@ -95,6 +106,42 @@
     top:0px!important ;
     left:705px!important ;
   }
+  #srk-techstack .clipped-border:nth-child(8){
+    top: 196px !important;
+    left: 823px !important;
+  }
+  #srk-techstack .clipped-border:nth-child(9){
+    top: 0px !important;
+    left: 941px !important;
+  }
+  #srk-techstack .clipped-border:nth-child(10){
+    top:196px!important ;
+    left:1050px !important ;
+  }
+  #srk-techstack .clipped-border:nth-child(11){
+    top:0px!important ;
+    left:705px!important ;
+  }
+  #srk-techstack .clipped-border:nth-child(12){
+    top:0px!important ;
+    left:705px!important ;
+  }
+  #srk-techstack .clipped-border:nth-child(13){
+    top:0px!important ;
+    left:705px!important ;
+  }
+  #srk-techstack .clipped-border:nth-child(14){
+    top:0px!important ;
+    left:705px!important ;
+  }
+  #srk-techstack .clipped-border:nth-child(15){
+    top:0px!important ;
+    left:705px!important ;
+  }
+  #srk-techstack .clipped-border:nth-child(16){
+    top:0px!important ;
+    left:705px!important ;
+  }
 
   #srk-techstack #clipped {
   -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)!important ;
@@ -142,4 +189,8 @@
         left:5px !important ;
       }
   }
+  
+
+  
+
   

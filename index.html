@@ -25,12 +25,13 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-
+    
 	<!-- Animate.css -->
     
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/all.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- Hotjar Tracking Code for https://saadrizwankhan.github.io -->
 <script>
@@ -73,8 +74,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="srk-navbar-brand">
-							<a class="srk-logo" href="/"><span>Sa</span><span>ad</span></a>
+						<div class="srk-navbar-brand" >
+							<a class="srk-logo"   href="/"><span>Sa</span><span>ad</span></a>
 						</div>
 						<a href="#" class="js-srk-nav-toggle srk-nav-toggle"><i></i></a>
 					</div>
@@ -85,7 +86,7 @@
 <div id="srk-about">
         <div class="container">
             <div class="row text-center">
-                <h2 class="bold">About</h2>
+                <h2 class="bold"  data-aos="fade-up"  data-aos-duration="500">About</h2>
             </div>
             <div class="row">
                 <div class="col-md-5 animate-box">
@@ -125,7 +126,7 @@
                                 <a href="https://github.com/SaadRizwanKhan"><i class="icon-github"></i></a>
                                 <a href="https://www.linkedin.com/in/saad-rizwan-khan/"><i class="icon-linkedin"></i></a>
                             </p>
-                            <p><a href="contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
+                            <p data-aos="fade-up"><a href="contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
                         </div>
                     </div>
                 </div>
@@ -210,7 +211,16 @@
     </div>
 
 <div id="srk-techstack">
+    <center>
+        <div class="row text-center">
+            <h2 class="bold">Everyday Tools</h2>
+        </div><br><br>
+        
+    </center>
     <div class="gallery">
+        <div class="clipped-border">
+            <img src="/images/tech/laravel.png" id="clipped" style="background-color: white;padding: 47px;">
+          </div>
         <div class="clipped-border">
           <img src="/images/tech/html.webp" id="clipped" style="background-color: #e44d26;">
         </div>
@@ -218,19 +228,42 @@
           <img src="/images/tech/css.jpg" id="clipped">
         </div>
         <div class="clipped-border">
-          <img src="/images/tech/css.jpg" id="clipped">
+          <img id="clipped" src="/images/tech/javascript2.png">
         </div>
           <div class="clipped-border">
-          <img src="/images/tech/css.jpg" id="clipped">
+          <img src="/images/tech/php2.jpg" id="clipped">
         </div>
-          <div class="clipped-border">
-          <img src="/images/tech/css.jpg" id="clipped">
-        </div>
+       
         <div class="clipped-border">
-            <img src="/images/tech/css.jpg" id="clipped">
+            <img src="/images/tech/livewire.png" id="clipped">
+          </div>
+        
+          <div class="clipped-border">
+            <img id="clipped" src="/images/tech/ES62.png" style="padding: 12px;background-color: #343434;">
           </div>
           <div class="clipped-border">
-            <img src="/images/tech/css.jpg" id="clipped">
+            <img id="clipped" style="padding: 12px;background-color: white;" src="/images/tech/vuejs.png">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" src="/images/tech/vsCode.png" style="padding: 12px;background-color: white;padding: 35px;">
+          </div>
+          <div class="clipped-border">
+            <img src="/images/tech/MSOfficeLogo.png" id="clipped"  style="padding: 12px;background-color: white;padding: 25px;">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" src="/images/tech/github.png" style="padding: 12px;background-color: white;padding: 25px;">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" style="padding: 12px; background-color:white;" src="/images/tech/Adobe-Photoshop1.jpg">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" style="padding: 12px; background-color:black;" src="/images/tech/Adobe-illustrator.jpeg">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" style="padding: 12px; background-color:rgb(184, 72, 170);" src="/images/tech/adobeXD1.jpg">
+          </div>
+          <div class="clipped-border">
+            <img id="clipped" style="padding: 12px; background-color:white;" src="/images/tech/windows1.png">
           </div>
         
       </div>
@@ -244,9 +277,13 @@
     <div class="row text-center">
         <h2 class="bold">Certified</h2>
     </div><br><br>
-    <img src="/images/certificates/CertifiedProfessionalWebDeveloper.png" alt="" width="80%">
+    
+    <img src="/images/certificates/CertifiedProfessionalWebDeveloper.png" alt="" width="80%"><br><br>
+    <img src="/images/certificates/Google Digital Garage Certificate - certificate pdf.png" alt="" width="80%" style="border: 10px solid black;">
 </center>
 </div>
+
+
 
 
 <footer>
@@ -311,10 +348,14 @@
 </div>
 
 <!-- all js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="js/all.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170558324-1"></script>
 <script>
+    
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
