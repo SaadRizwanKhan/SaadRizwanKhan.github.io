@@ -190,7 +190,14 @@
       }
   }
   
-
-  
-
-  
+footer{
+  background-image: url('/images/backgrounds/doodles.png');
+}
+#footer{background-color: #ffffffad;}
+#footer h2{font-weight:bold !important}
+#footer p{background-color: white;
+  padding: 25px;
+  border: 2px darkorange dashed;
+  border-radius: 26px;
+      border-bottom-right-radius: 26px;
+  border-bottom-right-radius: 0pc;}
